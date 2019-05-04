@@ -1,0 +1,113 @@
+{
+  "users": [
+    {
+      "username": "saillesh",
+      "password": "sample",
+      "RoleId": 2,
+      "IsDisable": false,
+      "id": 1
+    },
+    {
+      "username": "digambar",
+      "password": "sample",
+      "RoleId": 2,
+      "IsDisable": false,
+      "id": 2
+    },
+    {
+      "username": "test",
+      "password": "test",
+      "RoleId": 1,
+      "IsDisable": false,
+      "id": 4
+    },
+    {
+      "username": "arnel",
+      "password": "arnel",
+      "RoleId": 2,
+      "IsDisable": false,
+      "id": 5
+    }
+  ],
+  "contacts": [
+    {
+      "name": "arnel",
+      "phone": "1234",
+      "email": "arnel@mgail.com",
+      "image": "sdasda",
+      "userid": 5,
+      "id": 1
+    },
+    {
+      "name": "Saillesh Pawar",
+      "phone": "7351594444",
+      "email": "sailleshp@q.com",
+      "image": "sadasd",
+      "userid": 5,
+      "id": 2
+    },
+    {
+      "name": "sagar awate",
+      "phone": "123",
+      "email": "sagara@gmail.com",
+      "image": "asd",
+      "userid": 1,
+      "id": 3
+    },
+    {
+      "name": "anshu gupta",
+      "phone": "1231",
+      "email": "anshu@gmail.com",
+      "image": "sadsa",
+      "userid": 1,
+      "id": 4
+    },
+    {
+      "name": "snehal thube",
+      "phone": "1231",
+      "email": "snehalt@q.com",
+      "image": "asdad",
+      "userid": 1,
+      "id": 5
+    },
+    {
+      "name": "Yogesh saswade",
+      "phone": "1234567890",
+      "email": "yo@gmail.com",
+      "image": "asdasd",
+      "userid": 1,
+      "id": 6
+    }
+  ],
+  "tasks": [
+    {
+      "title": "learn jquery",
+      "completed": false,
+      "data": "2019-04-10T12:19:12.048Z",
+      "id": 1
+    },
+    {
+      "title": "learn jquery  azure",
+      "completed": false,
+      "data": "2019-04-10T12:19:16.081Z",
+      "id": 2
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
