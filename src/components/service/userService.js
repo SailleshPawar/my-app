@@ -5,7 +5,8 @@ export const userService = {
     logout,
     getAll,
     disableUser,
-    enableUser
+    enableUser,
+    getLoggedInUserDetails
 };
 function login(username, password) {
     const requestOptions = {
@@ -30,8 +31,20 @@ function login(username, password) {
 }
 
 
+function getLoggedInUserDetails(){
+     let user=null;
+    try {
+        user= JSON.parse(localStorage.user)[0];
+          
+          } catch (error) {
+            user=null;
+          }
+          debugger;
+          return user;
+}
+
+
 function disableUser(user,callback){
-    debugger;
     Axios.put(`http://localhost:3001/users/${user.id}`,{
         "username":user.username,
         "password": user.password,
@@ -49,7 +62,6 @@ function disableUser(user,callback){
 }
 
   function enableUser(user,callback){
-      debugger;
       Axios.put(`http://localhost:3001/users/${user.id}`,{
         "username": user.username,
         "password": user.password,

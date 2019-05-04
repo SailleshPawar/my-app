@@ -46,7 +46,6 @@ class LoginForm extends Component {
      loadSignUp=()=>
      {
          console.log("clled");
-         debugger;
         const { from } =  { from: { pathname: "/SignUp" } };   
         this.props.history.push(from);
        
@@ -67,13 +66,15 @@ class LoginForm extends Component {
         if(user.length>0 && user[0].RoleId===2 && !user[0].IsDisable){
             const { from } =  { from: { pathname: "/" } };   
             localStorage.setItem('user', JSON.stringify(user));
-            this.props.history.push(from);
+            window.location=from.pathname;
+            //this.props.history.push(from);
            this.setState({authenticated: true})
             }
         else if(user.length>0 && user[0].RoleId===1 && !user[0].IsDisable){
             const { from } =  { from: { pathname: "/UserList" } };   
             localStorage.setItem('user', JSON.stringify(user));
-            this.props.history.push(from);
+            window.location=from.pathname;
+            // this.props.history.push(from);
            this.setState({authenticated: true})
         }
       

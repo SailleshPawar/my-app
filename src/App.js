@@ -15,23 +15,23 @@ import Logout from './components/logout./logout.component';
       user:''
     }
 
-    componentWillMount(){
+    // componentWillUpdate(){
       
-      try {
-        const user=JSON.parse(localStorage.user)[0];
-      this.setState({user});
-      } catch (error) {
-        this.setState({user:null});
-      }
+    //   try {
+    //     const user=JSON.parse(localStorage.user)[0];
+    //   this.setState({user});
+    //   } catch (error) {
+    //     this.setState({user:null});
+    //   }
       
-    }
+    // }
    
     render(){
   return (
     <div className="container">
      
       <Router>
-      <HeaderComponent user={this.state.user} />
+      <HeaderComponent  />
      {/* <div>
      <Route path="/SignUp"  component={SignUp} />
      </div> */}

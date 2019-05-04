@@ -27,6 +27,20 @@
       "RoleId": 2,
       "IsDisable": false,
       "id": 5
+    },
+    {
+      "username": "snehal",
+      "password": "sam",
+      "IsDisable": false,
+      "id": 6,
+      "RoleId": 2
+    },
+    {
+      "username": "rest",
+      "password": "rest",
+      "IsDisable": false,
+      "id": 7,
+      "RoleId": 2
     }
   ],
   "contacts": [

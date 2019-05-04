@@ -35,7 +35,8 @@ class SignUp extends Component {
         Axios.post("http://localhost:3001/users",{
             "username": data.username,
             "password": data.password,
-            "IsDisable":false
+            "IsDisable":false,
+            "RoleId":2
         }).then((response) => {
             console.log(response);
             const { from } =  { from: { pathname: "/login" } };   
